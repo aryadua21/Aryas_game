@@ -69,9 +69,9 @@ def gameRunning():
                     time.sleep(1)
                     gameRunning()
                 print("You see 4 boxes which you don't know the contents off. You can choose to search the boxes or leave the room")
+                correctBox = str(random.randint(1,4))
                 while True:
                     rightRoomAnswer = input("Type 1-4 to search the boxes or type q to leave the room: ")
-                    correctBox = str(random.randint(1,4))
                     if rightRoomAnswer == "q":
                         gameRunning()
                     elif rightRoomAnswer != correctBox:
